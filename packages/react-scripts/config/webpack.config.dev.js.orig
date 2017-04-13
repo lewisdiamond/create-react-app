@@ -11,17 +11,23 @@
 'use strict';
 
 const autoprefixer = require('autoprefixer');
+<<<<<<< HEAD
 const path = require('path');
+=======
+>>>>>>> Make config customizable
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
+<<<<<<< HEAD
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
-
+=======
+const getClientEnvironment = require('./env');
+const paths = require('./paths');
 const customConfig = (c) => {
     try {
         return require(`${paths.appConfig}/webpack.custom.dev.js`)(c);
@@ -29,6 +35,13 @@ const customConfig = (c) => {
         return c
     }
 }
+
+// @remove-on-eject-begin
+// `path` is not used after eject - see https://github.com/facebookincubator/create-react-app/issues/1174
+const path = require('path');
+// @remove-on-eject-end
+ 
+>>>>>>> Make config customizable
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -283,7 +296,11 @@ module.exports = customConfig({
   node: {
     fs: 'empty',
     net: 'empty',
+<<<<<<< HEAD
     tls: 'empty',
+=======
+    tls: 'empty'
+>>>>>>> Make config customizable
   },
   // Turn off performance hints during development because we don't do any
   // splitting or minification in interest of speed. These warnings become
@@ -291,4 +308,8 @@ module.exports = customConfig({
   performance: {
     hints: false,
   },
+<<<<<<< HEAD
+};
+=======
 });
+>>>>>>> Make config customizable

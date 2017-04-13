@@ -1,8 +1,15 @@
 {
+<<<<<<< HEAD
+  "name": "react-scripts",
+  "version": "1.0.1",
+  "description": "Configuration and scripts for Create React App.",
+  "repository": "facebookincubator/create-react-app",
+=======
   "name": "customizable-react-scripts",
-  "version": "1.0.1-alpha.1",
+  "version": "0.9.5",
   "description": "customizable CRA's react-scripts",
   "repository": "lewisdiamond/create-react-app",
+>>>>>>> Make config customizable
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=6"
