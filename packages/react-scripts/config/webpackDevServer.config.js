@@ -11,7 +11,8 @@
 'use strict';
 
 const errorOverlayMiddleware = require('react-error-overlay/middleware');
-const config = require('./webpack.config.dev');
+const _config = require('./webpack.config.dev');
+const config = Array.isArray(_config)?_config[0]:_config
 const paths = require('./paths');
 
 const protocol = process.env.HTTPS === 'true' ? 'https' : 'http';
