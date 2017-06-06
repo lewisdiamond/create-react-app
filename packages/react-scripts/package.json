@@ -1,14 +1,14 @@
 {
-  "name": "react-scripts",
+  "name": "customizable-react-scripts",
   "version": "1.0.7",
-  "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "description": "customizable CRA's react-scripts",
+  "repository": "lewisdiamond/create-react-app",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
+    "url": "https://github.com/lewisdiamond/create-react-app/issues"
   },
   "files": [
     "bin",
